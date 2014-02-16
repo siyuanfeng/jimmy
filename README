@@ -91,3 +91,12 @@ For puppetry. Press Enter to save a pose.
 Main code. Starts the robot in standing mode. The user can send ROS messages
 to change mode or give commands. 
 
+4.3 bin/test_send_ros_cmd
+Sends a ros command to test_jimmy, takes at least 1 argument. 
+The first argument is the type of the command. It's the integer defined in 
+msg/jimmy_command.msg
+For walking and neck commands, it needs 3 extra doubles. 
+For walking, the commands are forward velocity, velocity to the left, and 
+angular velocity around Z axis.
+For neck, the 3 numbers correspond to angular velocity in RPY. 
+
